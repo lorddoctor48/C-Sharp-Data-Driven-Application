@@ -1,0 +1,32 @@
+﻿<Window x:Class="OOP_Project_Part2_WPF_CS.FrmSearchDisplayAllEntertainmentActivities"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Project_Part2_WPF_CS"
+        mc:Ignorable="d"
+        Title="FrmSearchDisplayAllEntertainmentActivities" Height="900" Width="800">
+    <Grid>
+        <Button x:Name="btnGoBack" Content="Go Back" HorizontalAlignment="Left" Margin="46,120,0,0" VerticalAlignment="Top" Click="btnMainMenu_Click" FontSize="22" RenderTransformOrigin="0.5,0.813"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="182,120,0,0" VerticalAlignment="Top" Click="btnReset_Click" FontSize="22" RenderTransformOrigin="0.426,-0.179"/>
+        <DataGrid x:Name="dgEntertainmentActivities" AutoGenerateColumns="False" FontSize="22" Margin="45,300,45,40">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date/StartTime" Binding="{Binding DateStartTime}" />
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}" />
+                <DataGridTextColumn Header="Cost" Binding="{Binding Cost}" />
+                <DataGridTextColumn Header="MinParticipants" Binding="{Binding MinParticipants}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnSearchAllEntertainmentActivities" Content="Search All Activities" HorizontalAlignment="Left" Margin="45,183,0,0" VerticalAlignment="Top" Click="btnSearchAllEntertainmentActivities_Click" FontSize="22"/>
+        <Button x:Name="btnDisplayAllEntertainmentActivities" Content="Display All Entertainment Activities" HorizontalAlignment="Left" Margin="45,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.599,0.511" Click="btnDisplayAllEntertainmentActivities_Click" FontSize="22"/>
+        <RadioButton x:Name="radBefore" Content="Before" HorizontalAlignment="Left" Margin="524,161,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <RadioButton x:Name="radOn" Content="On" HorizontalAlignment="Left" Margin="524,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.212,0.966" FontSize="22"/>
+        <RadioButton x:Name="radAfter" Content="After" HorizontalAlignment="Left" Margin="524,241,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <GroupBox x:Name="grpSearchCriteria" Header="Search Criteria" Margin="506,120,45,584" FontSize="22"/>
+        <DatePicker x:Name="dpSearchDate" SelectedDate="{Binding MySelectedDate}" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="170" FontSize="22"/>
+        <DatePicker HorizontalAlignment="Left" Margin="853,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="1004,396,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEntertainmentActivities" Content="Entertainment Activities" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="22"/>
+
+    </Grid>
+</Window>

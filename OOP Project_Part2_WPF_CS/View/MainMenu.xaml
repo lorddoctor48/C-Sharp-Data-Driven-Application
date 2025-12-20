@@ -1,0 +1,18 @@
+﻿<Window x:Class="OOP_Project_Part2_WPF_CS.MainMenu"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:OOP_Project_Part2_WPF_CS"
+mc:Ignorable="d"
+Title="MainMenu" Height="600" Width="800">
+    <Grid>
+        <Button x:Name="btnSearchEntertainmentActivities" Content="Display Entertainment Activities" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnSearchEntertainmentActivities_Click" FontSize="22" Margin="0,194,0,0"/>
+        <Button x:Name="btnSearchFitnessActivities" Content="Display Fitness Activities" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Click="btnSearchFitnessActivities_Click" FontSize="22"/>
+        <Button x:Name="BtnAddActivities" Content="Add Activities" HorizontalAlignment="Center" VerticalAlignment="Top" Click="BtnAddActivities_Click" FontSize="22" Margin="0,119,0,0" />
+        <Label x:Name="lblApplicationTitle" Content="Activities Management System" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Center" Margin="0,428,0,0" VerticalAlignment="Top" FontSize="22" Click="btnClose_Click"/>
+        <Button x:Name="btnDeleteActivities" Content="Delete Activities" HorizontalAlignment="Center" Height="37" Margin="0,350,0,0" VerticalAlignment="Top" Width="176" FontSize="22" Click="btnDeleteActivities_Click"/>
+        <Label x:Name="lblCompanyName" Content="Lloyd's Workbench" HorizontalAlignment="Center" Height="38" Margin="0,500,0,0" VerticalAlignment="Top" Width="200" FontSize="22"/>
+    </Grid>
+</Window>

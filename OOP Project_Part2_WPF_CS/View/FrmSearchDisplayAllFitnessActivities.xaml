@@ -1,0 +1,31 @@
+﻿<Window x:Class="OOP_Project_Part2_WPF_CS.FrmSearchDisplayAllFitnessActivities"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Project_Part2_WPF_CS"
+        mc:Ignorable="d"
+        Title="FrmSearchDisplayAllFitnessActivities" Height="900" Width="800">
+    <Grid>
+        <Button x:Name="btnGoBack" Content="Go Back" HorizontalAlignment="Left" Margin="45,120,0,0" VerticalAlignment="Top" Click="btnMainMenu_Click" FontSize="22"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="200,120,0,0" VerticalAlignment="Top" Click="btnReset_Click" FontSize="22"/>
+        <Button x:Name="btnSearchAllFitnessActivities" Content="Search All Activities" HorizontalAlignment="Left" Margin="45,171,0,0" VerticalAlignment="Top" Click="btnSearchAllFitnessActivities_Click" Width="206" FontSize="22" />
+        <Button x:Name="btnDisplayAllFitnessActivities" Content="Display All Fitness Activities" HorizontalAlignment="Left" Margin="45,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.599,0.511" Click="btnDisplayAllFitnessActivities_Click" FontSize="22" />
+        <RadioButton x:Name="radBefore" Content="Before" HorizontalAlignment="Left" Margin="540,153,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <RadioButton x:Name="radOn" Content="On" HorizontalAlignment="Left" Margin="540,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.212,0.966" FontSize="22"/>
+        <RadioButton x:Name="radAfter" Content="After" HorizontalAlignment="Left" Margin="540,233,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <GroupBox x:Name="grpSearchCriteria" Header="Search Criteria" Margin="522,120,45,589" FontSize="22"/>
+        <DatePicker x:Name="dpSearchDate" SelectedDate="{Binding MySelectedDate}" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="170" FontSize="22"/>
+        <DatePicker HorizontalAlignment="Left" Margin="853,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblFitnessActivities" Content="Fitness Activities" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <DataGrid x:Name="dgFitnessActivities" AutoGenerateColumns="False" FontSize="22" Margin="45,300,45,40">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date/StartTime" Binding="{Binding DateStartTime}" />
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}" />
+                <DataGridTextColumn Header="Cost" Binding="{Binding Cost}" />
+                <DataGridTextColumn Header="Location" Binding="{Binding Location}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

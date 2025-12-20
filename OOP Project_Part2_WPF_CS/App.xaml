@@ -1,0 +1,9 @@
+﻿<Application x:Class="OOP_Project_Part2_WPF_CS.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OOP_Project_Part2_WPF_CS"
+             StartupUri="View/MainMenu.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
