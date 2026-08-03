@@ -12,7 +12,6 @@ A data-driven application designed to manage and track various projects and task
 - .NET Framework
 - WPF (Windows Presentation Foundation)
 - SQL Server for database integration
-- Entity Framework for ORM (Object-Relational Mapping)
 - MVVM (Model-View-ViewModel) design pattern
 - XAML for UI design
 - Git & GitHub for version control
